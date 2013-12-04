@@ -1,0 +1,14 @@
+diff --git a/media/libstagefright/ACodec.cpp b/media/libstagefright/ACodec.cpp
+index a9e344d..80e25c4 100644
+--- a/media/libstagefright/ACodec.cpp
++++ b/media/libstagefright/ACodec.cpp
+@@ -2043,7 +2043,8 @@ status_t ACodec::setupAVCEncoderParameters(const sp<AMessage> &msg) {
+         if (err != OK) {
+             ALOGE("Setting intra macroblock refresh mode (%d) failed: 0x%x",
+                     err, intraRefreshMode);
+-            return err;
++            ALOGE("setupAVCEncoderParameters() SKIP!! intra-refresh-mode");
++            //return err;
+         }
+     }
+ 

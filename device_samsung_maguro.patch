@@ -1,0 +1,11 @@
+diff --git a/overlay/frameworks/base/core/res/res/values/config.xml b/overlay/frameworks/base/core/res/res/values/config.xml
+index ff0d538..e6ae243 100644
+--- a/overlay/frameworks/base/core/res/res/values/config.xml
++++ b/overlay/frameworks/base/core/res/res/values/config.xml
+@@ -24,4 +24,6 @@
+     <!-- The restoring is handled by modem if it is true -->
+     <bool translatable="false" name="skip_restoring_network_selection">true</bool>
+ 
++    <bool name="config_enableWifiDisplay">true</bool>
++
+ </resources>
